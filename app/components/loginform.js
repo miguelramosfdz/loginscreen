@@ -48,7 +48,9 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         backgroundColor: 'rgba(255,255,255, 0.2)',
         borderColor: '#fff',
-        borderWidth: 0.6,
+        // In iOS 0.6 does not work 
+        // borderWidth: 0.6,
+        borderWidth: 1,
     },
     loginbutton: {
         backgroundColor: '#ecf0f1',
