@@ -17,6 +17,7 @@ import Loginform from './app/components/loginform';
 export default class App extends React.Component {
     render() {
         return (
+        <KeyboardAvoidingView behavior={ "padding" } style={styles.keyboardwrapper}>
 
            <Image source={require('./app/img/pexels-photo-268533.jpeg')} style={styles.container}>
                <View style={styles.logocontainer}>
@@ -27,11 +28,19 @@ export default class App extends React.Component {
 
            </Image>
 
+        </KeyboardAvoidingView>
         );
     }
 }
 
 const styles = StyleSheet.create({
+    keyboardwrapper: {
+        flex: 1,
+        justifyContent: 'center',
+        alignSelf: 'stretch',
+        width: null,
+        marginTop: 20,
+    },
     container: {
         flex: 1,
         justifyContent: 'center',
